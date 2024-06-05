@@ -194,7 +194,7 @@ function Dashboard({}: Props) {
           )}
 
           {/* Cart */}
-          {cart && (
+          {authData?.user?.type == "user" && cart && (
             <Sheet>
               <Button
                 className="items-center gap-1.5"
